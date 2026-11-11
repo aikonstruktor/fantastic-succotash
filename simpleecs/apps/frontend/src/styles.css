@@ -1,0 +1,27 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  color: #152134;
+  background: #f4f5f7;
+  font-synthesis: none;
+  --copilot-kit-primary-color: #275bd8;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.workspace { max-width: 1120px; margin: 0 auto; padding: 42px 32px 22px; }
+header { display: flex; align-items: center; gap: 18px; }
+.brand { background: #152134; color: white; padding: 14px; border-radius: 14px; font-size: 25px; font-weight: 700; }
+.brand span { color: #8caeff; }
+.eyebrow { font-size: 11px; letter-spacing: .16em; color: #667085; margin: 0 0 6px; }
+h1 { font-size: clamp(22px, 4vw, 32px); font-weight: 650; letter-spacing: -.04em; margin: 0; }
+.stack { margin-left: auto; color: #516078; font-size: 12px; border: 1px solid #dce1e9; border-radius: 20px; padding: 8px 12px; }
+.intro { margin: 32px 0 22px; }
+.intro p { margin: 0 0 8px; font-size: 17px; }
+.intro span { color: #667085; font-size: 14px; }
+.chat { height: max(480px, calc(100dvh - 290px)); border: 1px solid #e0e5ec; border-radius: 18px; overflow: hidden; background: white; box-shadow: 0 8px 35px #15213408; }
+.copilotKitChat { height: 100%; }
+footer { display: flex; justify-content: space-between; color: #7d8799; font-size: 11px; margin-top: 18px; }
+@media (max-width: 640px) {
+  .workspace { padding: 22px 14px; }
+  .stack { display: none; }
+  footer span { display: none; }
+}

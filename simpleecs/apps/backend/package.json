@@ -1,0 +1,19 @@
+{
+  "name": "@simpleecs/backend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file-if-exists=../../.env --import tsx --watch src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/index.js",
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "@ag-ui/client": "1.0.2",
+    "@aws-sdk/client-bedrock-agentcore": "3.1166.0",
+    "@copilotkit/runtime": "1.86.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": { "@types/express": "^5.0.0", "tsx": "^4.20.0" }
+}

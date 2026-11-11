@@ -1,0 +1,8 @@
+aws_region          = "us-east-1"
+project_name        = "simpleecs"
+agentcore_agent_arn = "arn:aws:bedrock-agentcore:us-east-1:123456789012:runtime/my_agent-REPLACE"
+agentcore_qualifier = "DEFAULT"
+image_tag           = "v1"
+# Bootstrap first, then push images and change to true.
+services_enabled = false
+desired_count    = 1
